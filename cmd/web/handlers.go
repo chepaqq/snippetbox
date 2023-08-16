@@ -2,6 +2,7 @@ package main
 
 import (
 	"errors"
+	"fmt"
 	"net/http"
 	"strconv"
 
@@ -47,7 +48,6 @@ func (app *application) snippetView(w http.ResponseWriter, r *http.Request) {
 func (app *application) snippetCreate(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Create a new snippet..."))
 }
-
 
 func (app *application) snippetCreatePost(w http.ResponseWriter, r *http.Request) {
 	// Checking if the request method is a POST is now superfluous and can be
